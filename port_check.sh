@@ -24,3 +24,4 @@ check $plex_port
 if [ $? -ne 0 ]; then echo "bad check"; fi
 check $http_port
 if [ $? -ne 0 ]; then echo "bad check"; fi
+
