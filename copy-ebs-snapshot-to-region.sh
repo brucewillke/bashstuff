@@ -3,7 +3,7 @@
 set -xe
 
 aws ec2 describe-snapshots \
---profile baa \
+--profile $3 \
 --owner-id=$1 \
 --filters Name=tag-key,Values="Name" Name=tag-value,Values="$2" \
 --query 'Snapshots[*].{ID:SnapshotId}' \
