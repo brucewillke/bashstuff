@@ -14,7 +14,6 @@ kms_key_id="alias/aws/ebs"
 for s in $(cat snaps.txt);
 do
     aws ec2 copy-snapshot \
-    --profile baa \
     --source-region us-east-1 \
     --source-snapshot-id $s \
     --encrypted \
